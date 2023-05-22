@@ -13,7 +13,7 @@
 // }
 
 let numOrStr = prompt("input number or string");
-switch (numOrStr) {
+switch (isNaN(numOrStr) || numOrStr) {
     case null:
         console.log("ви скасували");
         break;
